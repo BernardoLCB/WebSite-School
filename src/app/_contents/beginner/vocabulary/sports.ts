@@ -1,0 +1,21 @@
+const sportsVocabulary = [
+  { word: "soccer / football", meaning: "futebol" },
+  { word: "basketball", meaning: "basquete" },
+  { word: "volleyball", meaning: "vôlei" },
+  { word: "tennis", meaning: "tênis" },
+  { word: "table tennis / ping pong", meaning: "ping pong" },
+  { word: "swimming", meaning: "natação" },
+  { word: "running", meaning: "corrida" },
+  { word: "cycling", meaning: "ciclismo" },
+  { word: "skating", meaning: "patinação" },
+  { word: "skiing", meaning: "esqui" },
+  { word: "surfing", meaning: "surfe" },
+  { word: "baseball", meaning: "beisebol" },
+  { word: "rugby", meaning: "rúgbi" },
+  { word: "boxing", meaning: "boxe" },
+  { word: "martial arts", meaning: "artes marciais" },
+  { word: "golf", meaning: "golfe" },
+  { word: "gymnastics", meaning: "ginástica" },
+  { word: "hiking", meaning: "caminhada / trilha" },
+  { word: "horse riding", meaning: "hipismo / cavalgar" }
+] as const;

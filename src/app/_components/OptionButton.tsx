@@ -1,7 +1,6 @@
 "use client"
 
 import Image from 'next/image'
-import { ReactElement } from 'react';
 
 type propOptionsButtons = {
     num:string;
@@ -32,8 +31,8 @@ export default function OptionsButtons({num, information, onSelect, bgColorStyle
                 
                 alt="Picture of the author"
             />
-            <section className={`w-[85%] ring p-1 ${bgColorStyle}`}>
-                <button onClick={()=>onSelect(information, buttonNumber)} className='w-full cursor-pointer text-left '>{information}</button>
+            <section className={`w-[85%] ring p-1 ${bgColorStyle} bg-gray-300`}>
+                <button onClick={()=>onSelect(information, buttonNumber)} className='w-full cursor-pointer text-left'>{information}</button>
             </section>
         </section>
     );

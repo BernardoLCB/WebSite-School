@@ -1,0 +1,23 @@
+const weatherVocabulary = [
+  { word: "sunny", meaning: "ensolarado" },
+  { word: "cloudy", meaning: "nublado" },
+  { word: "partly cloudy", meaning: "parcialmente nublado" },
+  { word: "overcast", meaning: "encoberto" },
+  { word: "rainy", meaning: "chuvoso" },
+  { word: "stormy", meaning: "tempestuoso" },
+  { word: "windy", meaning: "ventando" },
+  { word: "foggy", meaning: "com neblina / nevoeiro" },
+  { word: "snowy", meaning: "nevando" },
+  { word: "hot", meaning: "quente" },
+  { word: "warm", meaning: "morno / agradável" },
+  { word: "cool", meaning: "fresco" },
+  { word: "cold", meaning: "frio" },
+  { word: "humid", meaning: "úmido" },
+  { word: "dry", meaning: "seco" },
+  { word: "icy", meaning: "gelado / com gelo" },
+  { word: "freezing", meaning: "congelando" },
+  { word: "mild", meaning: "ameno" },
+  { word: "drizzle", meaning: "garoa / chuvisco" },
+  { word: "hail", meaning: "granizo" },
+  { word: "thunderstorm", meaning: "tempestade com trovões" }
+] as const;

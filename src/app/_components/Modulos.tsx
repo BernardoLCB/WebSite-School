@@ -20,7 +20,7 @@ export function Modulos({title, conteudo, descricao, emoji}:prop){
             <header className="flex flex-col gap-y-4">
                 <h1 className="text-2xl text-white">{conteudo}</h1>
                 <h3 className="text-gray-400">{descricao}</h3>
-                <button className="flex"><Link className="bg-gradient-to-r from-blue-500  to-purple-600 p-4 justify-start rounded-md" href= {`../game-page?level=${title}&type=${conteudo}`}> Acessar Módulo ➔ </Link></button>
+                <button className="flex"><Link className="bg-gradient-to-r from-blue-500  to-purple-600 p-4 justify-start rounded-md" href= {`../gamepage?level=${title}&type=${conteudo}`}> Acessar Módulo ➔ </Link></button>
             </header>
 
             <section>

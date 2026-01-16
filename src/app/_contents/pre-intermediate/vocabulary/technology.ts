@@ -1,0 +1,23 @@
+const technologyVocabulary = [
+  { word: "computer", meaning: "computador" },
+  { word: "laptop", meaning: "notebook" },
+  { word: "tablet", meaning: "tablet" },
+  { word: "smartphone / cell phone", meaning: "celular" },
+  { word: "keyboard", meaning: "teclado" },
+  { word: "mouse", meaning: "mouse" },
+  { word: "screen / monitor", meaning: "tela / monitor" },
+  { word: "printer", meaning: "impressora" },
+  { word: "speaker", meaning: "caixa de som" },
+  { word: "headphones", meaning: "fones de ouvido" },
+  { word: "charger", meaning: "carregador" },
+  { word: "USB flash drive", meaning: "pen drive" },
+  { word: "internet", meaning: "internet" },
+  { word: "website", meaning: "site" },
+  { word: "app / application", meaning: "aplicativo" },
+  { word: "software", meaning: "software / programa" },
+  { word: "hardware", meaning: "hardware" },
+  { word: "file", meaning: "arquivo" },
+  { word: "folder", meaning: "pasta" },
+  { word: "download", meaning: "baixar" },
+  { word: "upload", meaning: "enviar (arquivo)" }
+] as const;

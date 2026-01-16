@@ -1,0 +1,20 @@
+export const houseVocabulary = [
+  { word: "living room", meaning: "sala de estar", description: "Where you relax and watch TV" },
+  { word: "bedroom", meaning: "quarto", description: "Where you sleep" },
+  { word: "kitchen", meaning: "cozinha", description: "Where you cook" },
+  { word: "bathroom", meaning: "banheiro", description: "Where you shower or use the toilet" },
+  { word: "dining room", meaning: "sala de jantar", description: "Where you eat meals" },
+  { word: "hallway / corridor", meaning: "corredor", description: "Connects rooms in the house" },
+  { word: "garage", meaning: "garagem", description: "Where you keep the car" },
+  { word: "garden", meaning: "jardim", description: "Outdoor area with plants" },
+  { word: "backyard", meaning: "quintal", description: "Outdoor space behind the house" },
+  { word: "balcony", meaning: "sacada / varanda", description: "Small outdoor area above ground" },
+  { word: "laundry room", meaning: "lavanderia", description: "Where you wash clothes" },
+  { word: "attic", meaning: "sótão", description: "Space under the roof" },
+  { word: "basement", meaning: "porão", description: "Space below the house" },
+  { word: "closet", meaning: "closet / armário embutido", description: "Small room to store clothes" },
+  { word: "pantry", meaning: "dispensa", description: "Small storage for food" },
+  { word: "home office / study", meaning: "escritório em casa", description: "Where you work or study" },
+  { word: "porch", meaning: "alpendre / varanda térrea", description: "Covered area at the entrance" },
+  { word: "terrace", meaning: "terraço", description: "Flat open space on top of a building" }
+] as const;
