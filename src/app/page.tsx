@@ -7,10 +7,26 @@ import TabButton from "./_components/TabButton";
 import Container_Modulos from "./_components/ContainerModulos";
 import { Modulos } from "./_components/Modulos";
 import Footer from "./_components/Footer";
+import { useSession } from "next-auth/react";
 
 //possivel ideai: implementar um jogo como se fosse o "jogo do milhão"
 
 export default function HomePage() {
+
+  const {data:session, status} = useSession();
+
+  let name:string|null|undefined;
+  let image:string|null|undefined;
+
+  if (status == "authenticated"){
+    name = session.user.name;
+    image = session.user.image;
+  }
+  else if( status == "unauthenticated"){
+    name = "not informatad";
+    image = "not informatad";
+  }
+  
 
   const [title, setTitle] = useState<string>("null");
   const [isClicked, setIsClicked] = useState<boolean>(false)
@@ -25,6 +41,13 @@ export default function HomePage() {
     <>
       <Navbar/>
       <Generic_Card_Apresentacao/>
+
+
+      {/* <p>
+        {if(status == "authenticated"){
+          session.data?.user.name ?? false
+        }}
+      </p> */}
       
       {/* <Card_Modulos/> */}
 
