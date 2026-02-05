@@ -165,7 +165,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/bernardo/projetos/projeto_english/projeto_english/generated/prisma",
+      "value": "/home/bernardo/Projects/WebSite-School/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -179,7 +179,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/bernardo/projetos/projeto_english/projeto_english/prisma/schema.prisma",
+    "sourceFilePath": "/home/bernardo/Projects/WebSite-School/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -193,6 +193,7 @@ const config = {
     "db"
   ],
   "activeProvider": "sqlite",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
