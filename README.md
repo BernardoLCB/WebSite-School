@@ -27,3 +27,21 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+
+
+## How to run in your machine
+
+1. Clone localment this repository
+~~~bash
+git clone https://github.com/BernardoLCB/WebSite-School.git
+~~~
+
+2. Download Node.js if you don't have
+   (https://nodejs.org/en/download)
+
+3. Inside of the project run the line below, it is going to download all dependecies listed in the package.json file
+~~~bash
+npm install
+~~~
+
