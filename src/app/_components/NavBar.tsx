@@ -1,4 +1,7 @@
-export default function Navbar(){
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Navbar({image = "user"}:{image?:string}){
     return(
         <nav className="flex bg-gray-400 p-4">
             <header className="w-[70%] text-center text-2xl">
@@ -12,9 +15,19 @@ export default function Navbar(){
                     <button className = "border-lg rounded-2xl hover:bg-blue-700 pr-4 pl-4 cursor-pointer">About</button>
                 </section>
                 <section>
-                    <button className = "border-lg rounded-2xl hover:bg-blue-700 pr-4 pl-4 cursor-pointer">User</button>
+                    {/* {alert(image)} */}
+                    {image === "not informatad" &&                 
+                    <section>
+                        <Link className = "border-lg rounded-2xl hover:bg-blue-700 pr-4 pl-4 cursor-pointer" href={"/auth-page"} >Login</Link>
+                    </section> }
+                    {image !== "not informatad" &&
+                    <button className = "border-lg rounded-2xl  pr-4 pl-4 ">
+                        <img className="w-[50] h-[50] border-2 rounded-4xl hover:bg-blue-700 cursor-pointer" src={image} alt="picture of your account"/>
+                    </button>
+                    }
+
                 </section>
             </section>
         </nav>
-    );a
+    );
 }

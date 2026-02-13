@@ -6,8 +6,9 @@ import { useState, type ReactEventHandler } from "react";
 import { convertCompilerOptionsFromJson } from "typescript";
 import Input from "~/app/_components/Input";
 import LoginChoice from "~/app/_components/LoginChoice";
+import LoginForm from "~/app/_components/LoginForm";
 import { getUser, setUser } from "~/app/actions/auth";
-
+import Image from "next/image";
 useSession
 
 export default function Auth_Page(){
@@ -64,15 +65,14 @@ export default function Auth_Page(){
 
     return(
         <main className="h-dvh bg-[#101422] flex items-center justify-center ">
-            <div className="flex-row">
+            {/* <div className="flex-row">
                 <button onClick={()=> signIn("google")} className="text-white">login</button>
 
                 <button onClick={()=> signOut()} className="text-white">logout</button>
             </div>
-            <p className="text-white">{session.data?.user.name}</p>
+            <p className="text-white">{session.data?.user.name}</p> */}
 
             {/* Header */}
-            
             <form onSubmit={handleSubmit} className="w-[500px] bg-[#0A0B0F] ring rounded-xl p-4 text-white">
                 <header className="text-center">
                     <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-500  to-purple-600 bg-clip-text text-transparent">Portal Educacional</h1>
@@ -127,10 +127,21 @@ export default function Auth_Page(){
                 <Link href={""}>Esqueceu a senha?</Link>
                </section>
 
-               <button type="submit" name="asdadsad" value="123456">
-                asdadadasdasdasd
-               </button>
-
+                <section className="justify-center">
+                    <span className="flex items-center justify-center">Or Login with:</span>
+                    <div className="flex justify-center">
+                        <button className="cursor-pointer" onClick={()=>signIn("google", {callbackUrl:"/"})}>
+                            <Image
+                                src = "/google-logo-transparent.png"
+                                width={50}
+                                height={50}
+                                alt="Logo of Google"/>
+                        </button>
+                    </div>
+                    <button onClick={()=>signOut()}>
+                        {session.data?.user.name}
+                    </button>
+                </section>
             </form>
         </main>
     );
