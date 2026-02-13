@@ -39,15 +39,10 @@ export default function HomePage() {
 
   return(
     <>
-      <Navbar/>
+      <Navbar image = {image} />
       <Generic_Card_Apresentacao/>
 
 
-      {/* <p>
-        {if(status == "authenticated"){
-          session.data?.user.name ?? false
-        }}
-      </p> */}
       
       {/* <Card_Modulos/> */}
 
