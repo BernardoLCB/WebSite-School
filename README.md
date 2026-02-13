@@ -45,3 +45,7 @@ git clone https://github.com/BernardoLCB/WebSite-School.git
 npm install
 ~~~
 
+4.
+~~~bash
+npm run db:generate
+~~~
