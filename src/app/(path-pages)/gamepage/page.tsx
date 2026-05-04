@@ -21,8 +21,10 @@ export default function Page(){
     //alert(level);
 
     const listAllowsLevels:string[] = ["Elementar", "Basic", "Intermediate", "Pre-intermediate", "Intermediate" ,"Advanced"];
+    const listAllowsTypes:string[] = ["Vocabulary", "Verbs", "Phrasal Verbs"];
 
-    if (level !== null &&  (listAllowsLevels.includes(level))){
+    if ( ( level !== null && listAllowsLevels.includes(level) ) && ( type !== null && listAllowsTypes.includes(type)))
+        {
 
         const [isRight, setIsRight] = useState<boolean|null>(null);
         const [randomFullList, setRandomList] = useState<number[]>([0,0,0,0].map(()=>Math.floor(Math.random()*contents.length)))
@@ -67,20 +69,19 @@ export default function Page(){
             setBgColor(["","","",""])
             //alert("entrei")
         }
-
+        //bg-[#101422]
+        //md:bg-[url(/notebook-paper-background.jpg)]
+        
         return(
-            <main className="bg-[#101422] w-dvw h-dvh flex items-center justify-center p-5">
-
-                    <section className="w-[1280px] items-center justify-center ">
+            <main className="w-dvw h-dvh flex items-center justify-center p-5">
 
                     {/* SECTION WITH THE HEADER AND THE STOP BUTTON */}
-                    <section className="w-[1280px] items-center justify-center">
+                    <section className="max-w-[1280px] lg:w-[1280px] items-center justify-center">
                         <HeaderAndStopButton questionWord = {word} />
-                    </section>
-                    <section className=" flex flex-col md:flex-row">
+                    <section className=" flex flex-col lg:flex-row">
 
                         {/* SECTION WITH OPTIONS TO CHOOSE FROM */}
-                        <section className="basis-2/3" >
+                        <section className="basis-3/4" >
                             <OptionsButtons onSelect={handlerOptionsVerification} num ="/numbers/numero-1.png" information = {contents[randomFullList[0]].description} bgColorStyle={bgColor[0]} buttonNumber={1}/>
                             <OptionsButtons onSelect={handlerOptionsVerification} num ="/numbers/numero-2.png" information= {contents[randomFullList[1]].description} bgColorStyle={bgColor[1]} buttonNumber={2}/>
                             <OptionsButtons onSelect={handlerOptionsVerification} num ="/numbers/numero-3.png" information= {contents[randomFullList[2]].description} bgColorStyle={bgColor[2]} buttonNumber={3} />
@@ -92,7 +93,7 @@ export default function Page(){
                         </section>
                     
                         {/* SECTION WITH HELP  */}
-                        <section className="basis-1/3 bg-blue-400 max-w-[500px] rounded-3xl p-4 m-auto">
+                        <section className="basis-1/4 rounded-3xl p-4 m-auto border-2 bg-gray-300">
                             <CardHelp/>
                         </section>
 

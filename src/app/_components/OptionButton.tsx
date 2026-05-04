@@ -24,14 +24,14 @@ export default function OptionsButtons({num, information, onSelect, bgColorStyle
 
     return(
         <section className="flex items-center gap-x-3 p-2">
-            <Image
+            <Image className=''
                 src={num}
                 width={35}
                 height={35}
                 
                 alt="Picture of the author"
             />
-            <section className={`w-[85%] ring p-1 ${bgColorStyle} bg-gray-300`}>
+            <section className={`w-[85%] ring p-1 ${bgColorStyle} bg-gray-300 hover:bg-gray-400`}>
                 <button onClick={()=>onSelect(information, buttonNumber)} className='w-full cursor-pointer text-left'>{information}</button>
             </section>
         </section>
